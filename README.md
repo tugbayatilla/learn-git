@@ -18,7 +18,7 @@ Scenario: Initialisation - You have decided in your team to develop a new applic
 ```
 
 ```yaml
-Scenario: You have created a repository in GitHub but you have realised that the displayed name of the remote repository is wrong.
+Scenario: Changing repository display name - You have created a repository in GitHub but you have realised that the displayed name of the remote repository is wrong.
  Given: There is a GitHub repository named ”LoremIpsum”
   When: You change the name of the display name of the repository to “LearningGit”.
   Then: Your colleagues can see the display name of “LoremIpsum” repository as “LearningGit” 
