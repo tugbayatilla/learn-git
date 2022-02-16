@@ -127,3 +127,16 @@ Then: Your new commit message will be visible on remote branch “feature/featur
 
 #TIP: 
 ```
+
+```yaml
+Scenario: Merge commits - You have created couple of commits and then you have realised that actually these commits should be only one.
+Given: There is a GitHub repository named “LearningGit” 
+   And: Branch “feature/feature1” exist
+   And: There is a commit with “this is ugly message” message
+When: You call “git log” command to find the commit-id
+   And: You call “git rebase -i ...” command with interactive flag
+   And: Change the commit message
+Then: Your new commit message will be visible in branch “feature/feature1”
+
+#TIP: 
+```
