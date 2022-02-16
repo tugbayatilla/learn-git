@@ -196,3 +196,17 @@ Then:
 
 #TIP: reset
 ```
+
+```yaml
+Scenario: Create a backup - You would like to apply some git commands to a branch in a repository but you feel a little bit insecure because your git knowledge and experience is not quite good. What would you do? 
+Given: 
+   And: 
+   And: 
+When: 
+   And: 
+   And: 
+   And: 
+Then: 
+
+#TIP: 
+```
