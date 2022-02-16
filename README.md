@@ -17,7 +17,6 @@ Scenario: You have decided in your team to develop a new application. You need t
 #TIP: N/A
 ```
 
-
 ```yaml
 Scenario: You have created a repository in GitHub but you have realised that the displayed name of the remote repository is wrong.
  Given: There is a GitHub repository named ”LoremIpsum”
@@ -28,3 +27,13 @@ Scenario: You have created a repository in GitHub but you have realised that the
 #TIP: change .git/description
 ```
 	
+```yaml
+Scenario: You have created a repository in GitHub but you have realised that the name of the remote repository is wrong.
+ Given: There is a GitHub repository named “LoremIpsum” 
+  And : the display name as “LearningGit”
+  When: You change the name of the name of the repository to “LearningGit”.
+  Then: The URL of the repository will change to ”LearningGit”
+   And: The connection between local git and remote git will be broken.	
+
+#TIP: Go to github website settings
+```
