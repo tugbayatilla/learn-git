@@ -114,3 +114,16 @@ Then: Your changes will be in branch “feature/feature1”
 #TIP: 
 ```
 
+```yaml
+Scenario: Changing the any/old commit message - You had created very ugly commit messages earlier and you would like to change this old commit messages.
+Given: There is a GitHub repository named “LearningGit” 
+   And: Branch “feature/feature1” exist
+   And: There is a commit with “this is ugly message” message 3 commits earlier 
+When: You call “git log” command to find the commit-id
+   And: You call “git rebase -i feature/feature1 {commit-id}” command with interactive flag
+   And: Change the commit message with using “reword” keyword 
+   And: Call the “git push” command
+Then: Your new commit message will be visible on remote branch “feature/feature1”
+
+#TIP: 
+```
