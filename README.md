@@ -51,7 +51,7 @@ Scenario: Re-establish connection between local and remote git - You have change
 ```
 
 ```yaml
-Scenario: You have created a new file in your local computer and you would like to share this file with you colleagues. What would you do?
+Scenario: Sending assets to repository - You have created a new file in your local computer and you would like to share this file with you colleagues.
  Given: There is a GitHub repository named “LearningGit” 
   And : main branch exist
   And : There is a new file named “newfile.md” that contains at line 1 “newfile is created” on your local git
