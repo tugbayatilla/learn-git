@@ -100,3 +100,17 @@ Then: Git will raise a merge conflict error message.
 
 #TIP: Push
 ```
+
+```yaml
+Scenario: Resolve Conflicts 2 - You are implementing a new feature to the application. You have finished your changes and pushed your code to the repository. !!Damn!!. Somebody else also has changed something before your changes and your push is not working.
+Given: There is a GitHub repository named “LearningGit” 
+   And: Branch “feature/feature1” exist
+   And: There is a merge conflict on file “feature1.md” at line 2.
+When: You call “git merge main” command
+   And: Resolve the conflicts
+   And: Call the “git push” command
+Then: Your changes will be in branch “feature/feature1”
+
+#TIP: 
+```
+
