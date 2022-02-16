@@ -1,5 +1,7 @@
 # LearningGit
 
+> The idea behind this is to teach git to the colleagues who wants to learn with concrete scenarios by introducing Gherking format. 
+
 ## Features
 
 ### Feature: Learning Basic Git Scenarios
