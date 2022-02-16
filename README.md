@@ -87,3 +87,16 @@ Then: The new branch “test” will be in repository exactly the same as main b
 
 #TIP: Branch, Checkout, Push
 ```
+
+```yaml
+Scenario: Resolve Conflicts - You are implementing a new feature to the application. You have finished your changes and pushed your code to the repository. !!Damn!!. Somebody else also has changed something before your changes.
+Given: There is a GitHub repository named “LearningGit” 
+   And: Branch “feature/feature1” exist
+   And: You call “git checkout feature/feature1” command
+   And: “feature1.md” at line 2 was added by somebody as “feature1 was changed by somebody.”
+When: You have changed the same file “feature1.md” at line 2 as “feature1 was changed my me”
+   And: You call the “git push” command
+Then: Git will raise a merge conflict error message.
+
+#TIP: Push
+```
