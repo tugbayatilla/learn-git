@@ -40,7 +40,7 @@ Scenario: Changing repository name - You have created a repository in GitHub but
 ```
 
 ```yaml
-Scenario: You have changed the name of the remote repository and the your local git is not working any more.
+Scenario: Re-establish connection between local and remote git - You have changed the name of the remote repository and the your local git is not working any more.
  Given: There is a GitHub repository named ”LearningGit” 
   And : Your local git configuration is still looking at the old repository URL “LoremIpsum” 
   When: You call the “git remote set-url” command
