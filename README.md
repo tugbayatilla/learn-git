@@ -72,5 +72,5 @@ Scenario: Working in separate environment - The customer asks you to implement n
   And : you call the “git add, git commit and push with upstream flag” commands
  Then : the new branch “feature/feature1” with newfile.md will be in repository.
 
-#TIP: 
+#TIP: - Branch, Checkout, Push
 ```
