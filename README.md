@@ -183,3 +183,16 @@ Then:
 #TIP: reflog, log, reset
 ```
 
+```yaml
+Scenario: Go back in time - You have realised that you have been implementing wrong requirements to the feature and you would like to go back to previous state of the branch. 
+Given: 
+   And: 
+   And: 
+When: 
+   And: 
+   And: 
+   And: 
+Then: 
+
+#TIP: reset
+```
