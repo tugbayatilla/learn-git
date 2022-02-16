@@ -38,3 +38,14 @@ Scenario: You have created a repository in GitHub but you have realised that the
 
 #TIP: Go to github website settings
 ```
+
+```yaml
+Scenario: You have changed the name of the remote repository and the your local git is not working any more.
+ Given: There is a GitHub repository named ”LearningGit” 
+  And : Your local git configuration is still looking at the old repository URL “LoremIpsum” 
+  When: You call the “git remote set-url” command
+  Then: The connection between local git and remote git will be established again.
+   And: git push command will be working as expected anymore
+
+#TIP: N/A
+```
