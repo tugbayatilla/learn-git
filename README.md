@@ -60,3 +60,17 @@ Scenario: Sending assets to repository - You have created a new file in your loc
 
 #TIP: Push
 ```
+
+```yaml
+Scenario: Working in separate environment - The customer asks you to implement new feature to the application.
+ Given: There is a GitHub repository named “LearningGit” 
+  And : main branch exist
+  And : branch “feature/feature1” does not exist 
+ When : you create a new branch named “feature/feature1” from main branch
+  And : switch to the branch “feature/feature1” branch with “git checkout” command
+  And : create a new file named “feature1.md” contains “feature1 is implemented” at line 1
+  And : you call the “git add, git commit and push with upstream flag” commands
+ Then : the new branch “feature/feature1” with newfile.md will be in repository.
+
+#TIP: 
+```
