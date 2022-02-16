@@ -74,3 +74,16 @@ Then: the new branch “feature/feature1” with newfile.md will be in repositor
 
 #TIP: - Branch, Checkout, Push
 ```
+
+```yaml
+Scenario: Setting up test environment - The customer asks that they need a new environment to check the changes before going to production.
+Given: There is a GitHub repository named “LearningGit” 
+   And: main branch exist 
+   And: branch “test” does not exist 
+When: You create a new branch named “test” from main branch
+   And: Switch to the branch “test” branch with “git checkout” command
+   And: You call the “git push with upstream flag” commands 
+Then: The new branch “test” will be in repository exactly the same as main branch.
+
+#TIP: Branch, Checkout, Push
+```
