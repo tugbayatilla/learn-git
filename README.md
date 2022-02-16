@@ -153,3 +153,18 @@ Then: you can only see the commit1 on bracmch 'test'
 
 #TIP: Cherry-pick
 ```
+
+
+```yaml
+Scenario: Using 3rd party code - You have decided to use some functionality from another project in your organisation or in GitHub.
+Given: There is a GitHub repository named “LearningGit” 
+   And: There is a GitHub repository named “AnotherRepo” with one file which is called 'another.md'
+When: you call 'git submodule add {repo_url}' command
+   And: call 'git submodule update ...' command
+   And: 
+   And: 
+Then: you can see '.gitmodules' file in root directory
+   And: you can reach the 'another.md' file
+
+#TIP: submodules
+```
