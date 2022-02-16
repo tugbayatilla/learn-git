@@ -168,3 +168,18 @@ Then: you can see '.gitmodules' file in root directory
 
 #TIP: submodules
 ```
+
+```yaml
+Scenario: Recovery - You have decided to delete the branch you are working on for a reason and then you have realised that it was a mistake. 
+Given: 
+   And: 
+   And: 
+When: 
+   And: 
+   And: 
+   And: 
+Then: 
+
+#TIP: reflog, log, reset
+```
+
