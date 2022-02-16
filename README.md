@@ -138,5 +138,18 @@ When: You call “git log” command to find the commit-id
    And: Change the commit message
 Then: Your new commit message will be visible in branch “feature/feature1”
 
-#TIP: 
+#TIP: Rebase
+```
+
+```yaml
+Scenario: Sending any/old commit to main - You are developing a new feature, during the time in a certain state of your development, the customer asks you to send this state to the test system, but somehow you have forgot to send this state and continued developing more requirements to the feature, then you have realised that you should have sent it.
+Given: There is a GitHub repository named “LearningGit” 
+   And: Branch “feature/feature2” exist with multiple commits
+   And: Branch “test” exist
+   And: pushed a commit1 on branch "feature/feature2" with message "first commit"
+   And: pushed an another commit2 with message "second commit"
+When: you call 'git cherry-pick ...' command for commit1 to test branch 
+Then: you can only see the commit1 on bracmch 'test'
+
+#TIP: Cherry-pick
 ```
