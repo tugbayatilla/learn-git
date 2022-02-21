@@ -212,3 +212,17 @@ Then:
 
 #TIP: 
 ```
+
+```yaml
+Scenario: Sensitive data in git - While developing the application, you needed to save credentials to the config file (bad idea) to be able to run integration tests, yet then you have forgot to change this config file and pushed to the repository and multiple commits have been pushed on it.
+Given: 
+   And: 
+   And: 
+When: 
+   And: 
+   And: 
+   And: 
+Then: 
+
+#TIP: rebase
+```
