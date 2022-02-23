@@ -40,3 +40,5 @@
    - You would like to apply some git commands to a branch in a repository but you feel a little bit insecure because your git knowledge and experience is not quite good. What would you do? 
 - Sensitive data in git 
    - While developing the application, you needed to save credentials to the config file (bad idea) to be able to run integration tests, yet then you have forgot to change this config file and pushed to the repository and multiple commits have been pushed on it.
+- Change master to main 
+   - You have a repository called 'LearningGit' and the primary branch is called 'master' and you would like to change it's name to 'main'.

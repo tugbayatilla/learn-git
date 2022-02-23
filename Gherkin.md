@@ -218,3 +218,19 @@ Then:
 
 #TIP: rebase
 ```
+
+```yaml
+Scenario: Change master to main - You have a repository called 'LearningGit' and the primary branch is called 'master' and you would like to change it's name to 'main'.
+Given: There is a GitHub repository named “LearningGit” 
+   And: Branch “master” exists
+   And: Branch “main” does not exist
+When: 
+   And: Switching to the 'master' branch by 'git checkout master'
+   And: Rename the local branch by 'git branch -m main'
+   And: Push the 'main' local branch and reset the upstream branch by 'git push origin -u main'
+   And: Delete the 'master' remote branch by 'git push origin --delete master'
+Then: Branch “main” will exist
+   And: Branch “master” will not exist
+
+#TIP: push, upstream, -m
+```
